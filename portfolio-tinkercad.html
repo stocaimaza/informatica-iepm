@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi portfolio de proyectos 3D · 2° año · Informática IEPM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="--c:#0ca678">
+<header class="top">
+  <a class="marca" href="index.html"><span class="logo">💻</span> Informática IEPM</a>
+  <span class="sub">Instituto Educativo Punta Mogotes</span>
+</header>
+<main>
+<a class="volver" href="anio-2.html">← Volver a 2° año</a>
+<div class="hero">
+  <div>
+    <p class="etiqueta">2° año · HTML y CSS</p>
+    <h1>Mi portfolio de proyectos 3D</h1>
+    <p class="intro">Armá tu propia página web para mostrar tus diseños de <b>Tinkercad</b>: con tu nombre, una foto de cada proyecto y el link para verlo.</p>
+    <p><a class="boton" href="ejemplo-portfolio.html" target="_blank">👀 Ver el ejemplo terminado</a></p>
+  </div>
+  <img src="ej-portfolio.png" alt="Vista del portfolio de ejemplo">
+</div>
+<h2 class="parte">Parte 1 · HTML</h2><p class="parte-sub">Armamos la estructura del portfolio con lo que ya sabemos, más dos etiquetas nuevas.</p>
+<div class="pasos"><section class="paso">
+  <div class="num">1</div>
+  <div class="cuerpo">
+    <h3>Prepará tu carpeta </h3>
+    <p>Creá una carpeta llamada <b>mi-portfolio</b>. Ahí adentro va a estar todo: tu página y las fotos de tus proyectos.</p><p>Abrí el <b>Bloc de notas</b> y guardá un archivo vacío dentro de esa carpeta con el nombre <b>index.html</b>. En <b>Tipo</b> elegí <b>Todos los archivos</b> y en <b>Codificación</b> elegí <b>UTF-8</b> (así se ven bien los acentos y la ñ).</p>
+    <p class="tip">💡 Si se guarda como <b>index.html.txt</b>, no funciona: fijate de elegir “Todos los archivos”.</p>
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">2</div>
+  <div class="cuerpo">
+    <h3>Sacá una foto de cada proyecto </h3>
+    <p>Abrí cada diseño en <b>Tinkercad</b> y sacale una captura de pantalla: apretá <b>Windows + Shift + S</b> y marcá el diseño con el mouse. Pegala en Paint y guardala como imagen <b>.png</b> dentro de la carpeta <b>mi-portfolio</b>.</p><p>Poneles nombres cortos, en minúscula y <b>sin espacios ni acentos</b>: por ejemplo <b>llavero.png</b>, <b>casa.png</b>, <b>robot.png</b>.</p>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">3</div>
+  <div class="cuerpo">
+    <h3>Copiá el link de cada proyecto </h3>
+    <p>En Tinkercad, abrí tu diseño y <b>copiá la dirección</b> que aparece arriba en el navegador. Pegala en un archivo de notas para tenerla a mano: la vas a usar en el paso 6.</p>
+    <p class="tip">💡 Para que otras personas puedan ver tu diseño con el link, en las propiedades del diseño tiene que estar como <b>Público</b>. Si no sabés cómo, preguntale al profe.</p>
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">4</div>
+  <div class="cuerpo">
+    <h3>El esqueleto de la página </h3>
+    <p>Toda página web tiene la misma estructura. Copiá esto en tu <b>index.html</b>:</p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Portfolio de Sofi&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;!-- Acá adentro va todo lo que se ve en la página --&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div><ul><li><b>&lt;head&gt;</b>: información de la página que no se ve. El <b>&lt;title&gt;</b> es el nombre que aparece en la pestaña.</li><li><b>&lt;body&gt;</b>: todo lo que <b>sí se ve</b> va acá adentro.</li><li>Lo que está entre <code>&lt;!--</code> y <code>--&gt;</code> es un <b>comentario</b>: una nota para nosotros que el navegador no muestra.</li></ul>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">5</div>
+  <div class="cuerpo">
+    <h3>Encabezado y “Sobre mí” </h3>
+    <p>Dentro del <b>&lt;body&gt;</b>, escribí tu nombre con un título <b>&lt;h1&gt;</b> y contá algo de vos con párrafos <b>&lt;p&gt;</b>. Para las secciones usamos <b>&lt;h2&gt;</b>, un título un poco más chico.</p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>    &lt;!-- Encabezado: tu nombre y quién sos --&gt;
+    &lt;h1&gt;Sofi Ejemplo&lt;/h1&gt;
+    &lt;p&gt;Estudiante de 2° año · Diseño 3D con Tinkercad&lt;/p&gt;
+
+    &lt;!-- Sobre mí --&gt;
+    &lt;h2&gt;Sobre mí&lt;/h2&gt;
+    &lt;p&gt;Me gusta diseñar objetos en 3D y pensar cosas útiles para imprimir.&lt;/p&gt;</code></pre></div>
+    <p class="tip">💡 Cambiá “Sofi Ejemplo” y los textos por los tuyos. ¡Es tu portfolio!</p>
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">6</div>
+  <div class="cuerpo">
+    <h3>La tarjeta de un proyecto <span class="nuevo">NUEVO</span></h3>
+    <p>Cada proyecto va dentro de un <b>&lt;div&gt;</b>, que es como una caja que agrupa cosas. Adentro van la foto, el nombre, una descripción y el link. Hay dos etiquetas nuevas:</p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>    &lt;h2&gt;Mis proyectos&lt;/h2&gt;
+
+    &lt;div class=&quot;tarjeta&quot;&gt;
+      &lt;img src=&quot;llavero.png&quot; alt=&quot;Llavero con mi inicial&quot;&gt;
+      &lt;h3&gt;Llavero con mi inicial&lt;/h3&gt;
+      &lt;p&gt;Mi primer diseño: un llavero con la letra S y un agujero para el aro.&lt;/p&gt;
+      &lt;a href=&quot;https://www.tinkercad.com&quot; target=&quot;_blank&quot;&gt;Ver en Tinkercad&lt;/a&gt;
+    &lt;/div&gt;</code></pre></div><ul><li><b>&lt;img&gt;</b> muestra una imagen. En <b>src</b> va el nombre del archivo (tiene que estar en la misma carpeta). En <b>alt</b> va una descripción de la imagen, para quien no la puede ver. ¡No lleva etiqueta de cierre!</li><li><b>&lt;a&gt;</b> es un <b>link</b>. En <b>href</b> pegás la dirección de tu proyecto en Tinkercad. <b>target="_blank"</b> hace que se abra en una pestaña nueva.</li><li><b>class="tarjeta"</b> le pone un nombre al div. Por ahora no hace nada, pero lo vamos a usar en la Parte 2 para darle estilo.</li></ul>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">7</div>
+  <div class="cuerpo">
+    <h3>Agregá todos tus proyectos y miralo </h3>
+    <p>Copiá la tarjeta una vez por cada proyecto y cambiá la foto, el nombre, la descripción y el link. Guardá el archivo y hacé <b>doble clic en index.html</b>: se abre en el navegador.</p><p>Cada vez que cambies algo: <b>guardá</b> en el Bloc de notas y apretá <b>F5</b> en el navegador para ver el cambio.</p>
+    <p class="tip">💡 ¿No se ve la foto? Revisá que el nombre en <b>src</b> sea exactamente igual al del archivo (mayúsculas, extensión .png, sin espacios).</p>
+    <div class="figs"></div>
+  </div>
+</section></div>
+<h2 class="parte">Parte 2 · Primer CSS</h2><p class="parte-sub">Ahora le damos estilo: colores, letra y tarjetas. HTML dice <b>qué</b> hay en la página; CSS dice <b>cómo se ve</b>.</p>
+<div class="pasos"><section class="paso">
+  <div class="num">8</div>
+  <div class="cuerpo">
+    <h3>¿Dónde va el CSS? <span class="nuevo">NUEVO</span></h3>
+    <p>El CSS se escribe dentro de una etiqueta <b>&lt;style&gt;</b>, en el <b>&lt;head&gt;</b>. Cada regla tiene esta forma:</p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>qué elemento {
+  propiedad: valor;
+}</code></pre></div><p>Empecemos por toda la página (<b>body</b>): un color de fondo y otra letra.</p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>    &lt;style&gt;
+      body {
+        background-color: #eef2f7;
+        font-family: Arial, sans-serif;
+      }
+    &lt;/style&gt;</code></pre></div><ul><li><b>background-color</b>: el color de fondo.</li><li><b>font-family</b>: la letra.</li><li>Cada línea termina con <b>punto y coma ;</b> y todo va entre <b>llaves { }</b>.</li></ul>
+    <p class="tip">💡 Los colores se escriben con un código como <b>#eef2f7</b>. Buscá en Google “selector de color” para elegir el tuyo y copiar su código.</p>
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">9</div>
+  <div class="cuerpo">
+    <h3>Ordená la página y pintá los títulos <span class="nuevo">NUEVO</span></h3>
+    <p>Agregá estas propiedades al <b>body</b> para que todo quede centrado y no tan ancho, y dale color a los títulos:</p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>      body {
+        background-color: #eef2f7;
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #0b7a5a;
+      }
+      h2 {
+        color: #1f2a44;
+      }</code></pre></div><ul><li><b>max-width</b>: el ancho máximo de la página.</li><li><b>margin: auto</b>: la centra.</li><li><b>padding</b>: deja un espacio adentro, para que el texto no quede pegado al borde.</li><li><b>color</b>: el color del texto.</li></ul>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">10</div>
+  <div class="cuerpo">
+    <h3>Las tarjetas <span class="nuevo">NUEVO</span></h3>
+    <p>¿Te acordás de <b>class="tarjeta"</b>? Para darle estilo a una clase, en CSS se escribe con un <b>punto adelante</b>: <b>.tarjeta</b></p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>      .tarjeta {
+        background-color: white;
+        border: 2px solid #d5dbe6;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 20px;
+      }
+
+      .tarjeta img {
+        width: 100%;
+        border-radius: 8px;
+      }</code></pre></div><ul><li><b>border</b>: un borde de 2 píxeles, línea continua (solid) y color gris.</li><li><b>border-radius</b>: redondea las esquinas.</li><li><b>margin-bottom</b>: separa una tarjeta de la otra.</li><li><b>.tarjeta img</b> le da estilo solo a las imágenes que están <b>dentro</b> de una tarjeta: que ocupen todo el ancho (100%).</li></ul>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">11</div>
+  <div class="cuerpo">
+    <h3>El link con forma de botón <span class="nuevo">NUEVO</span></h3>
+    <p>Por último, hacemos que el link <b>&lt;a&gt;</b> parezca un botón:</p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>      a {
+        background-color: #0ca678;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+      }</code></pre></div><p><b>text-decoration: none</b> le saca el subrayado. ¡Guardá, apretá F5 y compará con el <a href="ejemplo-portfolio.html" target="_blank">ejemplo terminado</a>!</p>
+    
+    <div class="figs"></div>
+  </div>
+</section></div>
+<section class="completo"><h2>📄 Código completo</h2><p>Así queda el <b>index.html</b> con las dos partes. Usalo para comparar si algo no te funciona.</p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Portfolio de Sofi&lt;/title&gt;
+    &lt;style&gt;
+      /* Toda la página */
+      body {
+        background-color: #eef2f7;
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      /* Títulos */
+      h1 {
+        color: #0b7a5a;
+      }
+      h2 {
+        color: #1f2a44;
+      }
+
+      /* Cada tarjeta de proyecto */
+      .tarjeta {
+        background-color: white;
+        border: 2px solid #d5dbe6;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 20px;
+      }
+
+      /* La foto del proyecto */
+      .tarjeta img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      /* El link a Tinkercad, con forma de botón */
+      a {
+        background-color: #0ca678;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;!-- Encabezado: tu nombre y quién sos --&gt;
+    &lt;h1&gt;Sofi Ejemplo&lt;/h1&gt;
+    &lt;p&gt;Estudiante de 2° año · Diseño 3D con Tinkercad&lt;/p&gt;
+
+    &lt;!-- Sobre mí --&gt;
+    &lt;h2&gt;Sobre mí&lt;/h2&gt;
+    &lt;p&gt;Me gusta diseñar objetos en 3D y pensar cosas útiles para imprimir.&lt;/p&gt;
+
+    &lt;!-- Mis proyectos: una tarjeta (div) por cada proyecto --&gt;
+    &lt;h2&gt;Mis proyectos&lt;/h2&gt;
+
+    &lt;div class=&quot;tarjeta&quot;&gt;
+      &lt;img src=&quot;llavero.png&quot; alt=&quot;Llavero con mi inicial&quot;&gt;
+      &lt;h3&gt;Llavero con mi inicial&lt;/h3&gt;
+      &lt;p&gt;Mi primer diseño: un llavero con la letra S y un agujero para el aro.&lt;/p&gt;
+      &lt;a href=&quot;https://www.tinkercad.com&quot; target=&quot;_blank&quot;&gt;Ver en Tinkercad&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;tarjeta&quot;&gt;
+      &lt;img src=&quot;casa.png&quot; alt=&quot;Casa con techo a dos aguas&quot;&gt;
+      &lt;h3&gt;Mi casa&lt;/h3&gt;
+      &lt;p&gt;Una casa con ventanas, puerta y techo, armada con cubos y prismas.&lt;/p&gt;
+      &lt;a href=&quot;https://www.tinkercad.com&quot; target=&quot;_blank&quot;&gt;Ver en Tinkercad&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;tarjeta&quot;&gt;
+      &lt;img src=&quot;robot.png&quot; alt=&quot;Robot simpático&quot;&gt;
+      &lt;h3&gt;Robot&lt;/h3&gt;
+      &lt;p&gt;Un robot con antena, brazos y un botón en la panza.&lt;/p&gt;
+      &lt;a href=&quot;https://www.tinkercad.com&quot; target=&quot;_blank&quot;&gt;Ver en Tinkercad&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div></section>
+<section class="desafio"><h3>⭐ Desafíos</h3><ol><li>Elegí tus propios colores para que el portfolio tenga tu estilo.</li><li>Agregá un <b>&lt;button&gt;</b> que diga “Contactame” al final de la página.</li><li>Agregá una sección nueva: “Lo que aprendí en Tinkercad”, con una lista de cosas.</li><li>Probá otra letra en <b>font-family</b>: <b>Verdana</b>, <b>Georgia</b> o <b>Comic Sans MS</b>.</li></ol></section>
+<script>
+document.querySelectorAll('.copiar').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = b.parentNode.querySelector('code').innerText;
+    navigator.clipboard.writeText(t).then(function () { b.textContent = '¡Copiado!'; setTimeout(function () { b.textContent = 'Copiar'; }, 1500); });
+  });
+});
+</script>
+</main>
+<footer>Profe Samuel · Informática · IEPM</footer>
+</body>
+</html>

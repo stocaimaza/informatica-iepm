@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio de Sofi</title>
+    <style>
+      /* Toda la página */
+      body {
+        background-color: #eef2f7;
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      /* Títulos */
+      h1 {
+        color: #0b7a5a;
+      }
+      h2 {
+        color: #1f2a44;
+      }
+
+      /* Cada tarjeta de proyecto */
+      .tarjeta {
+        background-color: white;
+        border: 2px solid #d5dbe6;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 20px;
+      }
+
+      /* La foto del proyecto */
+      .tarjeta img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      /* El link a Tinkercad, con forma de botón */
+      a {
+        background-color: #0ca678;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Encabezado: tu nombre y quién sos -->
+    <h1>Sofi Ejemplo</h1>
+    <p>Estudiante de 2° año · Diseño 3D con Tinkercad</p>
+
+    <!-- Sobre mí -->
+    <h2>Sobre mí</h2>
+    <p>Me gusta diseñar objetos en 3D y pensar cosas útiles para imprimir.</p>
+
+    <!-- Mis proyectos: una tarjeta (div) por cada proyecto -->
+    <h2>Mis proyectos</h2>
+
+    <div class="tarjeta">
+      <img src="llavero.png" alt="Llavero con mi inicial">
+      <h3>Llavero con mi inicial</h3>
+      <p>Mi primer diseño: un llavero con la letra S y un agujero para el aro.</p>
+      <a href="https://www.tinkercad.com" target="_blank">Ver en Tinkercad</a>
+    </div>
+
+    <div class="tarjeta">
+      <img src="casa.png" alt="Casa con techo a dos aguas">
+      <h3>Mi casa</h3>
+      <p>Una casa con ventanas, puerta y techo, armada con cubos y prismas.</p>
+      <a href="https://www.tinkercad.com" target="_blank">Ver en Tinkercad</a>
+    </div>
+
+    <div class="tarjeta">
+      <img src="robot.png" alt="Robot simpático">
+      <h3>Robot</h3>
+      <p>Un robot con antena, brazos y un botón en la panza.</p>
+      <a href="https://www.tinkercad.com" target="_blank">Ver en Tinkercad</a>
+    </div>
+
+  </body>
+</html>
