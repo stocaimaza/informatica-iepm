@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subí tus imágenes a internet · 2° año · Informática IEPM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="--c:#0ca678">
+<header class="top">
+  <a class="marca" href="index.html"><span class="logo">💻</span> Informática IEPM</a>
+  <span class="sub">Instituto Educativo Punta Mogotes</span>
+</header>
+<main>
+<a class="volver" href="anio-2.html">← Volver a 2° año</a>
+<div class="hero"><div><p class="etiqueta">2° año · HTML</p><h1>Subí tus imágenes a internet</h1><p class="intro">¿Tu foto no aparece en el editor web? Subila a internet y usá su dirección en el <b>src</b> de la etiqueta <b>&lt;img&gt;</b>.</p></div><img src="postimages-1.png" alt="postimages"></div><div class="pasos"><section class="paso">
+  <div class="num">1</div>
+  <div class="cuerpo">
+    <h3>¿Por qué no se ve mi imagen? </h3>
+    <p>Cuando escribimos <code>src="llavero.png"</code>, el navegador busca el archivo <b>en la misma carpeta</b> que la página. Pero en un <b>editor web</b> (en internet) tu foto no está ahí: está en tu compu.</p><p>La solución: <b>subir la foto a internet</b> y poner en el <b>src</b> la <b>dirección completa</b> de la imagen.</p>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">2</div>
+  <div class="cuerpo">
+    <h3>Sacá la foto de tu proyecto </h3>
+    <p>Abrí tu diseño en <b>Tinkercad</b>, apretá <b>Windows + Shift + S</b> y marcá el diseño con el mouse. Pegala en Paint y guardala como <b>.png</b> con un nombre corto, por ejemplo <b>llavero.png</b>.</p>
+    <p class="tip">💡 Subí solo fotos de tus proyectos. <b>Nunca</b> subas fotos tuyas ni de tus compañeros: cualquiera con el link las puede ver.</p>
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">3</div>
+  <div class="cuerpo">
+    <h3>Entrá a postimages </h3>
+    <p>Entrá a <a href="https://postimages.org/es/" target="_blank"><b>postimages.org</b></a>. Es gratis y <b>no hace falta crear cuenta</b>.</p><p>Antes de subir, fijate que en la segunda opción diga <b>Sin caducidad</b>. Así tu imagen no se borra nunca.</p>
+    
+    <div class="figs"><figure><img src="postimages-1.png" alt="La página de postimages" loading="lazy"><figcaption>La página de postimages</figcaption></figure></div>
+  </div>
+</section><section class="paso">
+  <div class="num">4</div>
+  <div class="cuerpo">
+    <h3>Subí tu imagen </h3>
+    <p>Tocá <b>Elige las imágenes</b> y buscá tu foto. Esperá unos segundos a que termine de subir: va a aparecer una página nueva con tu imagen y una lista de <b>enlaces</b>.</p>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">5</div>
+  <div class="cuerpo">
+    <h3>Copiá el “Enlace directo” <span class="nuevo">NUEVO</span></h3>
+    <p>De todos los enlaces, el que sirve es el que dice <b>Enlace directo</b>. Tocá el botón de copiar que está al lado.</p><div class="linkbox"><span class="lb-tit">Así se ve un enlace directo (ejemplo):</span><span class="lb-url">https://i.postimg.cc/<i>AbC123xy</i>/llavero.png</span><span class="lb-ok">✅ Empieza con <b>https://i.postimg.cc/</b> y <b>termina en .png o .jpg</b></span><span class="lb-mal">❌ Si termina en otra cosa (por ejemplo <b>postimg.cc/AbC123xy</b>), es el link de la página, no de la imagen.</span></div>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">6</div>
+  <div class="cuerpo">
+    <h3>Pegalo en el src </h3>
+    <p>En tu página, reemplazá el nombre del archivo por el enlace que copiaste. <b>Antes:</b></p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>&lt;img src=&quot;llavero.png&quot; alt=&quot;Llavero con mi inicial&quot;&gt;</code></pre></div><p><b>Después:</b></p><div class="code"><button class="copiar" type="button">Copiar</button><pre><code>&lt;img src=&quot;https://i.postimg.cc/AbC123xy/llavero.png&quot; alt=&quot;Llavero con mi inicial&quot;&gt;</code></pre></div><ul><li>El enlace va <b>entre comillas</b>, igual que antes.</li><li>Repetí los pasos 4 a 6 con la foto de cada proyecto.</li></ul>
+    <p class="tip">💡 El enlace de arriba es inventado: tenés que pegar <b>el tuyo</b>.</p>
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">7</div>
+  <div class="cuerpo">
+    <h3>¿Sigue sin verse? </h3>
+    <ul><li>Abrí el enlace en una pestaña nueva: si ves <b>solo la imagen</b> (sin nada alrededor), el enlace está bien.</li><li>Revisá que no haya espacios ni que falte una comilla en el <b>src</b>.</li><li>Si postimages no anda, usá <a href="https://imgbb.com" target="_blank"><b>imgbb.com</b></a>: es igual, y en el menú de enlaces elegís <b>Enlaces directos</b>.</li></ul>
+    
+    <div class="figs"></div>
+  </div>
+</section></div><script>
+document.querySelectorAll('.copiar').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = b.parentNode.querySelector('code').innerText;
+    navigator.clipboard.writeText(t).then(function () { b.textContent = '¡Copiado!'; setTimeout(function () { b.textContent = 'Copiar'; }, 1500); });
+  });
+});
+</script>
+</main>
+<footer>Profe Samuel · Informática · IEPM</footer>
+</body>
+</html>

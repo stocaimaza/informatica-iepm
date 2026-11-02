@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La tanda de penales · 1° año · Informática IEPM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="--c:#1c7ed6">
+<header class="top">
+  <a class="marca" href="index.html"><span class="logo">💻</span> Informática IEPM</a>
+  <span class="sub">Instituto Educativo Punta Mogotes</span>
+</header>
+<main>
+<a class="volver" href="anio-1.html">← Volver a 1° año</a>
+<div class="hero"><div><p class="etiqueta">1° año · Scratch</p><h1>La tanda de penales</h1><p class="intro">Un juego de fútbol: una flecha marca hacia dónde patear, el arquero se mueve solo y cada vez más rápido. ¿Hacés 3 goles en 5 penales?</p></div><img src="penal/juego.png" alt="El juego de los penales"></div><div class="pasos"><section class="paso">
+  <div class="num">1</div>
+  <div class="cuerpo">
+    <h3>Bajá los dibujos del juego </h3>
+    <p>Creá un <b>proyecto nuevo</b> en Scratch. Después descargá estos 6 dibujos (tocá cada uno y se guardan en tu compu):</p><div class="descargas"><a class="descarga" href="penal/archivos/cancha.svg" download="cancha.svg">🟩 cancha</a><a class="descarga" href="penal/archivos/campe%C3%B3n.svg" download="campeón.svg">🏆 campeón</a><a class="descarga" href="penal/archivos/perdiste.svg" download="perdiste.svg">😢 perdiste</a><a class="descarga" href="penal/archivos/Arquero.svg" download="Arquero.svg">🧤 Arquero</a><a class="descarga" href="penal/archivos/Flecha.svg" download="Flecha.svg">➡️ Flecha</a><a class="descarga" href="penal/archivos/Pelota.svg" download="Pelota.svg">⚽ Pelota</a></div><p>Los tres primeros son <b>fondos</b> y los otros tres son <b>objetos</b>.</p>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">2</div>
+  <div class="cuerpo">
+    <h3>Cargá los fondos y los objetos </h3>
+    <ul><li><b>Fondos:</b> abajo a la derecha, pasá el mouse por el botón de fondos y elegí <b>Subir fondo</b> ⬆️. Subí <b>cancha</b>, <b>campeón</b> y <b>perdiste</b>.</li><li><b>Objetos:</b> borrá el gato (tachito 🗑️). Pasá el mouse por el botón de objetos y elegí <b>Subir objeto</b> ⬆️. Subí <b>Arquero</b>, <b>Flecha</b> y <b>Pelota</b>.</li></ul><p>Fijate que los objetos se llamen <b>exactamente</b> <b>Arquero</b>, <b>Flecha</b> y <b>Pelota</b> (con mayúscula). Si alguno dice otra cosa, cambiale el nombre en el cuadro <b>Objeto</b>.</p>
+    <p class="tip">💡 ¡Los nombres importan! Los bloques <b>¿tocando Arquero?</b> y <b>dirección de Flecha</b> buscan el objeto por su nombre.</p>
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">3</div>
+  <div class="cuerpo">
+    <h3>Creá las variables y el mensaje </h3>
+    <p>En <b>Variables</b>, tocá <b>Crear una variable</b> y creá estas cuatro, siempre con la opción <b>Para todos los objetos</b>:</p><ul><li><b>goles</b> · <b>atajadas</b> · <b>penales</b> · <b>velocidad</b></li></ul><p>Destildá el cuadradito de <b>velocidad</b> para que no se vea en pantalla.</p><p>También vamos a usar un <b>mensaje</b> llamado <b>fin</b>. Para crearlo: en <b>Eventos</b> arrastrá el bloque <b>enviar mensaje1 y esperar</b>, tocá la flechita ▼, elegí <b>Nuevo mensaje</b> y escribí <b>fin</b>.</p>
+    
+    <div class="figs"></div>
+  </div>
+</section><section class="paso">
+  <div class="num">4</div>
+  <div class="cuerpo">
+    <h3>El Escenario: el árbitro </h3>
+    <p>Hacé clic en el <b>Escenario</b> (a la derecha) y armá este código. Prepara todo, espera a que se pateen <b>5 penales</b> y decide si saliste <b>campeón</b> (3 goles o más) o <b>perdiste</b>.</p><ul><li><b>esperar hasta que</b> está en <b>Control</b>. El <b>=</b> y el <b>&gt;</b> están en <b>Operadores</b>.</li><li><b>enviar fin y esperar</b> avisa a todos los objetos que el juego terminó.</li></ul>
+    
+    <div class="figs"><figure><img src="penal/escenario.png" alt="Código del Escenario" loading="lazy"><figcaption>Código del Escenario</figcaption></figure></div>
+  </div>
+</section><section class="paso">
+  <div class="num">5</div>
+  <div class="cuerpo">
+    <h3>El Arquero se mueve solo </h3>
+    <p>Elegí el objeto <b>Arquero</b>. Va y viene delante del arco: se mueve <b>velocidad</b> pasos y, cuando llega a un costado (x mayor que 100 o menor que -100), se da vuelta.</p><ul><li><b>fijar estilo de rotación a no rotar</b> (en <b>Movimiento</b>) hace que el arquero no se ponga de cabeza.</li><li><b>posición en x</b> está al final de <b>Movimiento</b>.</li><li>Cuando recibe <b>fin</b>, se esconde.</li></ul>
+    <p class="tip">💡 Probá con la bandera verde: el arquero tiene que ir de un palo al otro sin parar.</p>
+    <div class="figs"><figure><img src="penal/arquero.png" alt="Código del Arquero" loading="lazy"><figcaption>Código del Arquero</figcaption></figure></div>
+  </div>
+</section><section class="paso">
+  <div class="num">6</div>
+  <div class="cuerpo">
+    <h3>La Flecha apunta </h3>
+    <p>Elegí la <b>Flecha</b>. Se para arriba de la pelota y gira de un lado al otro: 30 veces 3 grados a la derecha y 30 veces 3 grados a la izquierda. Así marca hacia dónde va a salir el tiro.</p>
+    
+    <div class="figs"><figure><img src="penal/flecha.png" alt="Código de la Flecha" loading="lazy"><figcaption>Código de la Flecha</figcaption></figure></div>
+  </div>
+</section><section class="paso">
+  <div class="num">7</div>
+  <div class="cuerpo">
+    <h3>La Pelota (parte 1): patear <span class="nuevo">NUEVO</span></h3>
+    <p>Elegí la <b>Pelota</b>. Espera la <b>barra espaciadora</b>, apunta hacia donde mira la flecha y avanza hasta tocar al arquero o llegar a la línea del arco (y mayor que 110).</p><ul><li><b>dirección de Flecha</b> está en <b>Sensores</b>: es el bloque que dice <b>fondo # de Escenario</b>. Cambiá <b>Escenario</b> por <b>Flecha</b> y después <b>fondo #</b> por <b>dirección</b>.</li><li><b>¿tocando Arquero?</b> también está en <b>Sensores</b>. El bloque <b>o</b> está en <b>Operadores</b>.</li></ul>
+    
+    <div class="figs"><figure><img src="penal/pelota-1.png" alt="Pelota: patear" loading="lazy"><figcaption>Pelota: patear</figcaption></figure></div>
+  </div>
+</section><section class="paso">
+  <div class="num">8</div>
+  <div class="cuerpo">
+    <h3>La Pelota (parte 2): ¿gol, atajada o afuera? <span class="nuevo">NUEVO</span></h3>
+    <p>Seguí abajo del bloque <b>repetir hasta que</b>, siempre dentro del <b>por siempre</b>:</p><ul><li>Si tocó al <b>Arquero</b> → suma una <b>atajada</b>.</li><li>Si no, y la pelota quedó <b>entre los palos</b> (x entre -150 y 150) → <b>¡GOOOL!</b> Usamos el bloque <b>y</b>: tienen que cumplirse las dos cosas.</li><li>Si no → <b>¡Afuera!</b></li></ul><p>Al final suma un penal, el arquero se pone <b>más rápido</b> (velocidad + 1) y la pelota vuelve al punto del penal. Y no te olvides del <b>al recibir fin → esconder</b>.</p>
+    
+    <div class="figs"><figure><img src="penal/pelota-2.png" alt="Pelota: gol, atajada o afuera" loading="lazy"><figcaption>Pelota: gol, atajada o afuera</figcaption></figure></div>
+  </div>
+</section><section class="paso">
+  <div class="num">9</div>
+  <div class="cuerpo">
+    <h3>¡A jugar! </h3>
+    <p>Tocá la <b>bandera verde</b> y pateá con la <b>barra espaciadora</b>. Tenés 5 penales: con 3 goles salís campeón.</p>
+    <p class="tip">💡 ¿No anda? Revisá: 1) los nombres de los objetos, 2) que las variables sean <b>para todos los objetos</b>, 3) que exista el mensaje <b>fin</b>, 4) que los bloques estén en el mismo orden que en las capturas.</p>
+    <div class="figs"><figure><img src="penal/juego.png" alt="El juego funcionando" loading="lazy"><figcaption>El juego funcionando</figcaption></figure></div>
+  </div>
+</section></div><section class="desafio"><h3>⭐ Desafíos</h3><ol><li>Que suene la hinchada cuando hacés un gol (en <b>Sonido</b> hay uno que se llama <b>Cheer</b>).</li><li>Que el arquero diga algo cuando ataja.</li><li>Jugá a <b>10 penales</b>: ¿qué dos números tenés que cambiar en el Escenario?</li><li>Hacé el arco más chico: cambiá el -150 y el 150 por números más cercanos al 0.</li></ol></section>
+</main>
+<footer>Profe Samuel · Informática · IEPM</footer>
+</body>
+</html>

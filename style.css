@@ -60,3 +60,12 @@ figcaption{font-size:.88rem;color:var(--muted);font-weight:700;margin-top:4px}
 .paso ul{margin:.3em 0 .6em;padding-left:1.2em}.paso li{margin:3px 0}
 .paso code{font-family:Consolas,monospace;background:#eef1f6;border-radius:4px;padding:0 4px}
 .paso .code code,.completo .code code{background:none;padding:0;border-radius:0;color:inherit}
+
+.descargas{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.descarga{background:var(--c);color:#fff;text-decoration:none;font-weight:800;padding:8px 14px;border-radius:12px}
+.descarga:hover{filter:brightness(1.1)}
+.linkbox{display:flex;flex-direction:column;gap:6px;background:#f4f7fb;border:2px dashed #b7c3d6;border-radius:14px;padding:14px 16px;margin:10px 0}
+.lb-tit{font-weight:800;color:var(--muted)}
+.lb-url{font-family:Consolas,monospace;background:#1e2433;color:#e6edf7;padding:8px 12px;border-radius:8px;word-break:break-all}
+.lb-url i{color:#ffd43b;font-style:normal}
+.paso .cuerpo{min-width:0}
